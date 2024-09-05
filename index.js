@@ -1,7 +1,7 @@
 
 
 try{
-    fetch("https://api.weatherapi.com/v1/current.json?key=2733231b998c430bbc1124303242908&q=London")
+    fetch("https://api.weatherapi.com/v1/current.json?key=2733231b998c430bbc1124303242908&q=Sri Lanka")
     .then((res)=>res.json())
     .then((data)=>{
         console.log(data);
