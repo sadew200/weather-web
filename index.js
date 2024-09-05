@@ -1,7 +1,7 @@
 
 
 try{
-    fetch("http://api.weatherapi.com/v1/current.json?key=2733231b998c430bbc1124303242908&q=London")
+    fetch("https://api.weatherapi.com/v1/current.json?key=2733231b998c430bbc1124303242908&q=London")
     .then((res)=>res.json())
     .then((data)=>{
         console.log(data);
@@ -35,7 +35,7 @@ const toggle = document.getElementById("darkmode-toggle");
 function setBody(){
     const days=document.getElementById("SelectDays").value
     let body=``;
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=2733231b998c430bbc1124303242908&q=Sri Lanka&days=${days}`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=2733231b998c430bbc1124303242908&q=Sri Lanka&days=${days}`)
     .then(res=>res.json())
     .then(data=>{
         data["forecast"]["forecastday"].forEach(e => {
